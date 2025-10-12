@@ -13,11 +13,15 @@
 
 **FlowMixer** introduces a mathematically constrained neural architecture where **a single operational layer can represent any depth** through semi-group composition. This eliminates neural depth search while achieving strong perfomance on time series forecasting, chaos prediction, and turbulent flow modeling.
 
+
+
 <p align="center">
-  <img src="assets/architecture_overview.png" width="100%">
+  <img src="figures/FIG1_v9b.png" width="88%">
   <br>
   <em>FlowMixer architecture: Reversible normalization (φ) wraps constrained mixing operations (W_t, W_f) to create interpretable spatiotemporal patterns</em>
 </p>
+
+
 
 ## ✨ Key Features
 
@@ -151,12 +155,12 @@ Each notebook generates specific visualizations and metrics:
 If you use these notebooks, please cite:
 
 ```bibtex
-@inproceedings{mehouachi2024flowmixer,
+@inproceedings{mehouachi2025flowmixer,
   title={FlowMixer: A Depth-Agnostic Neural Architecture for 
          Interpretable Spatiotemporal Forecasting},
   author={Mehouachi, Fares B. and Jabari, Saif Eddin},
   booktitle={Advances in Neural Information Processing Systems},
-  year={2024}
+  year={2025}
 }
 ```
 
