@@ -115,13 +115,13 @@ docker run -p 8888:8888 flowmixer/notebooks
 🔬 Key Results
 Kronecker-Koopman Eigenmodes
 <p align="center">
-  <img src="assets/eigenmodes_figure2.png" width="80%">
+  <img src="figures/eigenmodes_figure2.png" width="80%">
   <br>
   <em>Direct extraction of interpretable spatiotemporal patterns from traffic data</em>
 </p>
 Chaotic Systems
 <p align="center">
-  <img src="assets/chaos_figure3.png" width="80%">
+  <img src="figures/chaos_figure3.png" width="80%">
   <br>
   <em>Long-term predictions (1024 steps) for Lorenz, Rössler, and Aizawa attractors</em>
 </p>
@@ -129,11 +129,11 @@ Turbulent Flows
 <table>
 <tr>
 <td width="50%">
-<img src="assets/cylinder_flow_figure4a.png" width="100%">
+<img src="figures/cylinder_flow_figure4a.png" width="100%">
 <em>Cylinder flow (Re=150)</em>
 </td>
 <td width="50%">
-<img src="assets/airfoil_flow_figure4b.png" width="100%">
+<img src="figures/airfoil_flow_figure4b.png" width="100%">
 <em>NACA airfoil (Re=1000)</em>
 </td>
 </tr>
