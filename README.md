@@ -108,13 +108,13 @@ pip install cupy-cuda11x  # Adjust for your CUDA version
 🔬 Key Results
 Kronecker-Koopman Eigenmodes
 <p align="center">
-  <img src="figures/eigenmodes_figure2.png" width="80%">
+  <img src="figures/kronecker_koopman.png" width="80%">
   <br>
   <em>Direct extraction of interpretable spatiotemporal patterns from traffic data</em>
 </p>
 Chaotic Systems
 <p align="center">
-  <img src="figures/FIG3_overlaid_comparison_v11.pdf" width="80%">
+  <img src="figures/chaos_results.png" width="80%">
   <br>
   <em>Long-term predictions (1024 steps) for Lorenz, Rössler, and Aizawa attractors</em>
 </p>
@@ -122,11 +122,11 @@ Turbulent Flows
 <table>
 <tr>
 <td width="50%">
-<img src="figures/vorticity_pedictions_300.png" width="100%">
+<img src="figures/vorticity_Re_300.png" width="100%">
 <em>Cylinder flow (Re=150)</em>
 </td>
 <td width="50%">
-<img src="figures/airfoil_15_Re_1000.png" width="100%">
+<img src="figures/airfoil_Re_1000.png" width="100%">
 <em>NACA airfoil (Re=1000)</em>
 </td>
 </tr>
