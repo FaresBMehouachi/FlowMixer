@@ -116,14 +116,14 @@ pip install cupy-cuda11x  # Adjust for your CUDA version
 
 ## Chaotic Systems
 <p align="center">
-  <img src="figures/chaos_results.png" width="60%">
+  <img src="figures/chaos_results.png" width="80%">
   <br>
   <em>Long-term predictions (1024 steps) for Lorenz, Rössler, and Aizawa attractors</em>
 </p>
 
 ## Turbulent Flows
 <p align="center">
-  <img src="figures/Turbulence.png" width="60%">
+  <img src="figures/Turbulence.png" width="100%">
   <br>
   <em>Cylinder flow (Re=150) and NACA airfoil (Re=1000)</em>
 </p>
