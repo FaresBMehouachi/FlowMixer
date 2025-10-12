@@ -7,7 +7,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-ee4c2c.svg)](https://pytorch.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8+-ff6f00.svg)](https://tensorflow.org/)
 
-**[Paper](link) | [Project Page](link) | [Video](link) | [Slides](link) | [Poster](link)**
+**[Paper](link) | [Slides](link) | [Poster](link)**
 
 ## 🎯 TL;DR
 
@@ -105,32 +105,36 @@ pip install cupy-cuda11x  # Adjust for your CUDA version
 
 
 
-🔬 Key Results
-Kronecker-Koopman Eigenmodes
+# 🔬 Key Results
+## Long Horizon Time-Series Forecasting
 <p align="center">
-  <img src="figures/kronecker_koopman.png" width="80%">
+  <img src="figures/comparison_ETTh1.png" width="60%">
   <br>
-  <em>Direct extraction of interpretable spatiotemporal patterns from traffic data</em>
+  <em>Example of forecasting curves on the ETTh1 dataset</em>
 </p>
-Chaotic Systems
+
+
+## Chaotic Systems
 <p align="center">
-  <img src="figures/chaos_results.png" width="80%">
+  <img src="figures/chaos_results.png" width="60%">
   <br>
   <em>Long-term predictions (1024 steps) for Lorenz, Rössler, and Aizawa attractors</em>
 </p>
-Turbulent Flows
-<table>
-<tr>
-<td width="50%">
-<img src="figures/vorticity_Re_300.png" width="100%">
-<em>Cylinder flow (Re=150)</em>
-</td>
-<td width="50%">
-<img src="figures/airfoil_Re_1000.png" width="100%">
-<em>NACA airfoil (Re=1000)</em>
-</td>
-</tr>
-</table>
+
+## Turbulent Flows
+<p align="center">
+  <img src="figures/Turbulence.png" width="60%">
+  <br>
+  <em>Cylinder flow (Re=150) and NACA airfoil (Re=1000)</em>
+</p>
+
+## Kronecker-Koopman Eigenmodes
+<p align="center">
+  <img src="figures/kronecker_koopman.png" width="60%">
+  <br>
+  <em>Direct extraction of interpretable spatiotemporal patterns from traffic data</em>
+</p>
+
 
 ## 📊 Expected Outputs
 
