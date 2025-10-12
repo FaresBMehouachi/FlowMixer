@@ -1,13 +1,13 @@
 # 🌊 FlowMixer: Depth-Agnostic Neural Architecture for Interpretable Spatiotemporal Forecasting
 
 [![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-blue.svg)](https://neurips.cc/)
-[![arXiv](https://img.shields.io/badge/arXiv-2025.xxxxx-b31b1b.svg)](https://arxiv.org/abs/xxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2025.16786-b31b1b.svg)](https://arxiv.org/abs/2505.16786)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-ee4c2c.svg)](https://pytorch.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8+-ff6f00.svg)](https://tensorflow.org/)
 
-**[Paper](link) | [Slides](link) | [Poster](link)**
+**[Paper](link) | [Slides](link) | [Poster](link) | [arXiv](https://arxiv.org/abs/2505.16786)**
 
 ## 🎯 TL;DR
 
@@ -40,51 +40,17 @@ This directory contains interactive Jupyter notebooks demonstrating FlowMixer's 
 
 All notebooks include the complete FlowMixer implementation inline, demonstrating the architecture's simplicity - no complex dependencies or deep frameworks needed!
 
-## 📚 Available Notebooks
+## 📚 Interactive Notebooks
 
-### 1️⃣ **Interactive PyTorch Demo** [`1_FlowMixer_Interactive_Pytorch.ipynb`](1_FlowMixer_Interactive_Pytorch.ipynb)
-- **Framework**: PyTorch
-- **Features**: Interactive configuration with widgets
-- **Highlights**:
-  - Multiple mixer types (standard, exponential, periodic)
-  - Real-time Kronecker-Koopman eigenmode analysis
-  - EMA and Mixup augmentation options
-  - Comprehensive visualization of eigenmodes
-- **Runtime**: ~5-10 minutes per experiment
-- **Best for**: Understanding the architecture and interpretability
+Explore FlowMixer through hands-on Jupyter notebooks:
 
-### 2️⃣ **Time Series Forecasting** [`2_FlowMixer_Time_Series_Forecasting.ipynb`](2_FlowMixer_Time_Series_Forecasting.ipynb)
-- **Framework**: TensorFlow
-- **Features**: Comprehensive benchmarking
-- **Highlights**:
-  - ETT, Weather, Electricity, Traffic datasets
-  - RevIN and TD-RevIN normalization
-  - Automated results collection and formatting
-  - Reproduces paper Table 1
-- **Runtime**: 2-120 seconds/epoch depending on dataset
-- **Best for**: Reproducing forecasting results
+| Notebook | Framework | Key Features | Runtime |
+|----------|-----------|--------------|---------|
+| [**1. Interactive Demo**](notebooks/1_FlowMixer_Interactive_Pytorch.ipynb) | PyTorch | • Interactive widgets for real-time experimentation<br>• Kronecker-Koopman eigenmode visualization<br>• Multiple mixer types (standard, exp, periodic) | 5-10 min |
+| [**2. Time Series**](notebooks/2_FlowMixer_Time_Series_Forecasting.ipynb) | TensorFlow | • Benchmark datasets (ETT, Weather, Traffic)<br>• RevIN & TD-RevIN normalization<br>• Reproduces paper Table 1 results | 2-120 s/epoch |
+| [**3. Chaos Prediction**](notebooks/3_Chaotic_Attractors_Prediction.ipynb) | TensorFlow | • Lorenz, Rössler, Aizawa attractors<br>• SOBR implementation<br>• 1024-step long-term predictions | ~10 min |
+| [**4. Fluid Dynamics**](notebooks/4_CylinderFlow_Prediction.ipynb) | TF + CuPy | • GPU-accelerated Navier-Stokes<br>• Cylinder & airfoil flows<br>• 16× faster than spectral methods | ~45 min |
 
-### 3️⃣ **Chaotic Systems Prediction** [`3_Chaotic_Attractors_Prediction.ipynb`](3_Chaotic_Attractors_Prediction.ipynb)
-- **Framework**: TensorFlow with SOBR
-- **Features**: Chaos prediction with reservoir computing
-- **Highlights**:
-  - Lorenz, Rössler, and Aizawa attractors
-  - SOBR (Semi-Orthogonal Basic Reservoir) implementation
-  - Comparison with Reservoir Computing and N-BEATS
-  - Long-term prediction (1024 steps)
-- **Runtime**: ~10 minutes per attractor
-- **Best for**: Understanding dynamics modeling
-
-### 4️⃣ **2D Turbulent Flow Prediction** [`4_CylinderFlow_Prediction.ipynb`](4_CylinderFlow_Prediction.ipynb)
-- **Framework**: TensorFlow + CuPy
-- **Features**: GPU-accelerated fluid dynamics
-- **Highlights**:
-  - Real-time Navier-Stokes simulation
-  - Flow past cylinder (Re=150) and NACA airfoil (Re=1000)
-  - Vorticity field prediction and visualization
-  - 16× faster than spectral methods
-- **Runtime**: ~30 min simulation + 15 min training
-- **Best for**: Scientific computing applications
 
 ## 🚀 Running the Notebooks
 
@@ -101,7 +67,13 @@ pip install jupyter numpy pandas matplotlib tensorflow torch
 pip install cupy-cuda11x  # Adjust for your CUDA version
 ```
 
+### Launch
+```bash
+# Launch interactive demo
+jupyter notebook notebooks/1_FlowMixer_Interactive_Pytorch.ipynb
+```
 
+All notebooks are self-contained with documentation and can run independently. Start with notebook 1 for an interactive introduction, or jump directly to your domain of interest.
 
 
 
@@ -146,6 +118,40 @@ Each notebook generates specific visualizations and metrics:
 | 2 | Performance tables (MSE/MAE), comparison with baselines |
 | 3 | Attractor trajectories, phase space plots, long-term predictions |
 | 4 | Vorticity fields, flow visualizations, error maps |
+
+
+## 📊 Data Preparation
+
+### Required Datasets
+Place these files in `data/` directory:
+
+| Dataset | Files | Source & Credit |
+|---------|-------|-----------------|
+| **ETT** | ETT{h1,h2,m1,m2}.csv | [Zhou et al., 2021](https://github.com/zhouhaoyi/ETDataset) |
+| **Weather** | Weather.csv | [Max Planck Institute Biogeochemistry](https://www.bgc-jena.mpg.de/wetter/) |
+| **Traffic** | Traffic.csv | [California DOT](http://pems.dot.ca.gov/) |
+| **Electricity** | ECL.csv | [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014) |
+
+```bash
+# Quick setup
+mkdir -p data/
+cd data/
+
+# Download ETT datasets
+wget https://github.com/zhouhaoyi/ETDataset/raw/main/ETT-small/ETTh1.csv
+wget https://github.com/zhouhaoyi/ETDataset/raw/main/ETT-small/ETTh2.csv
+wget https://github.com/zhouhaoyi/ETDataset/raw/main/ETT-small/ETTm1.csv
+wget https://github.com/zhouhaoyi/ETDataset/raw/main/ETT-small/ETTm2.csv
+
+# For other datasets, download from sources above
+cd ..
+```
+
+### Auto-Generated Data
+- **Chaotic Systems** (Notebook 3): Generated via RK4 integration
+- **Turbulent Flows** (Notebook 4): Simulated using GPU-accelerated Navier-Stokes
+
+All datasets are used in accordance with their respective licenses for research purposes.
 
 ## 💡 Tips
 
