@@ -101,13 +101,6 @@ pip install jupyter numpy pandas matplotlib tensorflow torch
 pip install cupy-cuda11x  # Adjust for your CUDA version
 ```
 
-### Option 3: Docker Environment
-
-```bash
-# Pull pre-configured environment (coming soon)
-docker pull flowmixer/notebooks
-docker run -p 8888:8888 flowmixer/notebooks
-```
 
 
 
@@ -121,7 +114,7 @@ Kronecker-Koopman Eigenmodes
 </p>
 Chaotic Systems
 <p align="center">
-  <img src="figures/chaos_figure3.png" width="80%">
+  <img src="figures/FIG3_overlaid_comparison_v11.pdf" width="80%">
   <br>
   <em>Long-term predictions (1024 steps) for Lorenz, Rössler, and Aizawa attractors</em>
 </p>
@@ -129,11 +122,11 @@ Turbulent Flows
 <table>
 <tr>
 <td width="50%">
-<img src="figures/cylinder_flow_figure4a.png" width="100%">
+<img src="figures/vorticity_pedictions_300.png" width="100%">
 <em>Cylinder flow (Re=150)</em>
 </td>
 <td width="50%">
-<img src="figures/airfoil_flow_figure4b.png" width="100%">
+<img src="figures/airfoil_15_Re_1000.png" width="100%">
 <em>NACA airfoil (Re=1000)</em>
 </td>
 </tr>
