@@ -1,1 +1,4 @@
-
+4 Notebooks in Pytorch + TF
+Best used with at least 1 A100 GPU with 40 Gb of RAM
+Chaotic and Turbulence notebooks generate their own data
+The notebooks are self explanatory and easy to follow, for further inquiries please email: fm2620@nyu.edu
