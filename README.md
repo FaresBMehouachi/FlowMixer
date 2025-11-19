@@ -1,13 +1,13 @@
 # 🌊 FlowMixer: Depth-Agnostic Neural Architecture for Interpretable Spatiotemporal Forecasting
 
 [![NeurIPS 2024](https://img.shields.io/badge/NeurIPS-2025-blue.svg)](https://neurips.cc/)
-[![arXiv](https://img.shields.io/badge/arXiv-2025.16786-b31b1b.svg)](https://arxiv.org/abs/2025.16786)
+[![arXiv](https://img.shields.io/badge/arXiv-2025.16786-b31b1b.svg)](https://arxiv.org/abs/2505.16786)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-ee4c2c.svg)](https://pytorch.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8+-ff6f00.svg)](https://tensorflow.org/)
 
-**[Paper](link) | [Slides](link) | [Poster](link) | [arXiv](https://arxiv.org/abs/2025.16786)**
+**[Paper](https://openreview.net/pdf?id=II0T40Q785) | [Slides](https://neurips.cc/media/neurips-2025/Slides/118826_nPaG2xP.pdf) | [Poster](https://neurips.cc/media/PosterPDFs/NeurIPS%202025/118826.png?t=1763458932.9185288) | [arXiv](https://arxiv.org/abs/2505.16786)**
 
 ## 🎯 TL;DR
 
