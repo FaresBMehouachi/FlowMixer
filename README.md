@@ -1,6 +1,6 @@
 # 🌊 FlowMixer: Depth-Agnostic Neural Architecture for Interpretable Spatiotemporal Forecasting
 
-[![NeurIPS 2024](https://img.shields.io/badge/NeurIPS-2025-blue.svg)](https://neurips.cc/)
+[![NeurIPS 2024](https://img.shields.io/badge/NeurIPS-2025-blue.svg)](https://neurips.cc/virtual/2025/loc/san-diego/poster/118826)
 [![arXiv](https://img.shields.io/badge/arXiv-2025.16786-b31b1b.svg)](https://arxiv.org/abs/2505.16786)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
